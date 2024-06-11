@@ -1,0 +1,133 @@
+{
+    "information": {
+        "description": "API for notes",
+        "title": "Notes API",
+        "version": "1.0.0"
+    },
+    "components": {
+
+    },
+    "path": {
+        "/api/notes": {
+            "get": {
+                "description": "Get notes",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "Boolean"
+                                        },
+                                        "notes": {
+                                            "type": "array"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Return notes"
+                    }
+                },
+                "summary": "Return notes"
+            },
+            "post": {
+                "description": "create notes",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "Boolean"
+                                        },
+                                        "notes": {
+                                            "type": "array"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "create notes"
+                    }
+                },
+                "summary": "Return notes"
+            },
+            "put": {
+                "description": "Change note",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "Boolean"
+                                        },
+                                        "notes": {
+                                            "type": "array"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Return notes"
+                    }
+                }
+            },
+            "delete": {
+                "description": "Delete note",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "Boolean"
+                                        },
+                                        "notes": {
+                                            "type": "array"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "Return notes"
+                    }
+                }
+            }
+        },
+        "api/user": {
+            "post": {
+                "description": "create users & log in user",
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "success": {
+                                            "type": "Boolean"
+                                        },
+                                        "notes": {
+                                            "type": "array"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "description": "return users"
+                    }
+                }
+            }
+        }
+    }
+}
